@@ -1,0 +1,1299 @@
+2021.04.24 12:57:55.322 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12882 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 12:57:55.329 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 12:57:55.380 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 12:57:55.381 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 12:57:56.023 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 12:57:56.037 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 12:57:56.614 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 12:57:56.622 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 12:57:56.623 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 12:57:56.624 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 12:57:56.677 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 12:57:56.677 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1296 ms
+ 2021.04.24 12:57:56.802 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 12:57:56.825 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 12:57:56.875 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 12:57:56.921 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 12:57:56.982 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 12:57:56.991 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 12:57:57.086 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 12:57:57.093 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 12:57:57.165 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 12:57:57.313 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 12:57:57.475 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: cc968ee5-e7ce-41d2-91b1-3a8085fa3896
+
+ 2021.04.24 12:57:57.528 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a3f78c7, org.springframework.security.web.context.SecurityContextPersistenceFilter@33a348e9, org.springframework.security.web.header.HeaderWriterFilter@680218a3, org.springframework.security.web.csrf.CsrfFilter@53b3e708, org.springframework.security.web.authentication.logout.LogoutFilter@5e98a4f4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5f30add5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5b496e4c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1421e86, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7ae93edc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12bbc97e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4596e4f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32eedfac, org.springframework.security.web.session.SessionManagementFilter@4a6a4767, org.springframework.security.web.access.ExceptionTranslationFilter@20c37e00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51b343b1]
+ 2021.04.24 12:57:57.588 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 12:57:57.605 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 12:57:57.619 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 2.748 seconds (JVM running for 3.787)
+ 2021.04.24 12:59:30.274 [http-nio-8080-exec-2] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 12:59:30.275 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 12:59:30.277 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 2021.04.24 12:59:48.855 [SpringContextShutdownHook] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 12:59:48.856 [SpringContextShutdownHook] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 12:59:48.857 [SpringContextShutdownHook] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 12:59:48.861 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2021.04.24 12:59:48.877 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2021.04.24 13:00:00.409 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12941 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:00:00.416 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:00:00.471 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:00:00.472 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:00:01.120 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:00:01.135 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:00:01.712 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:00:01.719 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:00:01.720 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:00:01.721 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:00:01.770 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:00:01.770 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1297 ms
+ 2021.04.24 13:00:01.916 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:00:01.944 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 13:00:02.006 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 13:00:02.080 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 13:00:02.136 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 13:00:02.149 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:00:02.260 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:00:02.266 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:00:02.323 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:00:02.495 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:00:02.696 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 84f38b29-4afa-45d7-a0ff-3b6ef4edbd5e
+
+ 2021.04.24 13:00:02.756 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4eeae122, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b90f399, org.springframework.security.web.header.HeaderWriterFilter@46e5cbea, org.springframework.security.web.csrf.CsrfFilter@677ab5d4, org.springframework.security.web.authentication.logout.LogoutFilter@1fd73001, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c25dc3b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3b55f41b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c4e14b0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2899f550, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ed46d1f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35d1cdcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b9a591c, org.springframework.security.web.session.SessionManagementFilter@2bb4f5e6, org.springframework.security.web.access.ExceptionTranslationFilter@3ed395b4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24a34ebc]
+ 2021.04.24 13:00:02.820 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:00:02.837 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:00:02.853 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 3.037 seconds (JVM running for 4.233)
+ 2021.04.24 13:00:05.626 [http-nio-8080-exec-2] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:00:05.626 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:00:05.628 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 2021.04.24 13:02:01.033 [SpringContextShutdownHook] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:02:01.035 [SpringContextShutdownHook] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:02:01.035 [SpringContextShutdownHook] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:02:01.041 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2021.04.24 13:02:01.059 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2021.04.24 13:02:05.332 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12944 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:02:05.339 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:02:05.389 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:02:05.390 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:02:06.022 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:02:06.036 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:02:06.637 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:02:06.644 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:02:06.644 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:02:06.645 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:02:06.714 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:02:06.714 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+ 2021.04.24 13:02:06.870 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:02:06.894 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 13:02:06.951 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 13:02:06.995 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 13:02:07.052 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 13:02:07.063 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:02:07.165 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:02:07.171 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:02:07.208 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:02:07.347 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:02:07.524 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fc701ec4-8851-4c45-988c-3b06e5948e74
+
+ 2021.04.24 13:02:07.579 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@130d6b61, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bc4ddd5, org.springframework.security.web.header.HeaderWriterFilter@5eb814e0, org.springframework.security.web.csrf.CsrfFilter@6ccdb961, org.springframework.security.web.authentication.logout.LogoutFilter@558f7d44, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a032f14, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58f52388, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@514cd692, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1dda3661, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75d9ec2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64093d24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1de99be4, org.springframework.security.web.session.SessionManagementFilter@27d68cf5, org.springframework.security.web.access.ExceptionTranslationFilter@7d030a6c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39167ea5]
+ 2021.04.24 13:02:07.640 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:02:07.656 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:02:07.670 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 2.776 seconds (JVM running for 3.765)
+ 2021.04.24 13:02:54.481 [SpringContextShutdownHook] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:02:54.482 [SpringContextShutdownHook] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:02:54.482 [SpringContextShutdownHook] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:02:54.488 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2021.04.24 13:02:54.502 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2021.04.24 13:02:57.489 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12946 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:02:57.499 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:02:57.551 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:02:57.552 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:02:58.170 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:02:58.184 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:02:58.735 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:02:58.742 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:02:58.743 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:02:58.743 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:02:58.792 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:02:58.792 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1240 ms
+ 2021.04.24 13:02:58.931 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:02:58.953 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 13:02:59.001 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 13:02:59.046 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 13:02:59.100 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 13:02:59.110 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:02:59.240 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:02:59.246 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:02:59.295 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:02:59.439 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:02:59.605 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b26a38e6-321b-4bcf-88ae-ef526626fbd2
+
+ 2021.04.24 13:02:59.654 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26a23b11, org.springframework.security.web.context.SecurityContextPersistenceFilter@52bf3d94, org.springframework.security.web.header.HeaderWriterFilter@7e3c80ef, org.springframework.security.web.csrf.CsrfFilter@6ef9c947, org.springframework.security.web.authentication.logout.LogoutFilter@796342dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@625ff494, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c7eb95e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@17e5297, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4a1636c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cbf6a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1c86830c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7aa5d45c, org.springframework.security.web.session.SessionManagementFilter@5df2ec15, org.springframework.security.web.access.ExceptionTranslationFilter@7fc57348, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2191ac0]
+ 2021.04.24 13:02:59.713 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:02:59.729 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:02:59.743 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 2.701 seconds (JVM running for 3.704)
+ 2021.04.24 13:03:13.629 [http-nio-8080-exec-1] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:03:13.630 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:03:13.632 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 2021.04.24 13:03:36.989 [Thread-4] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:03:36.990 [Thread-4] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:03:36.991 [Thread-4] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:03:36.997 [Thread-4] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2021.04.24 13:03:37.013 [Thread-4] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2021.04.24 13:03:37.260 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12946 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:03:37.262 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:03:37.561 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:03:37.576 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:03:37.728 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:03:37.729 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:03:37.730 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:03:37.730 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:03:37.744 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:03:37.744 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 476 ms
+ 2021.04.24 13:03:37.796 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:03:37.800 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+ 2021.04.24 13:03:37.810 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+ 2021.04.24 13:03:37.811 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:03:37.825 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:03:37.826 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:03:37.847 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:03:37.898 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:03:37.969 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 10faedb1-5946-4d84-b408-21ca1281f38e
+
+ 2021.04.24 13:03:37.977 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33790866, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c1f6985, org.springframework.security.web.header.HeaderWriterFilter@5cd2059c, org.springframework.security.web.csrf.CsrfFilter@74b4ce90, org.springframework.security.web.authentication.logout.LogoutFilter@4b7c0866, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@38e7ef67, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1a1c2ae3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@521d7deb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a8be3e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41621a70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d501925, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55062c18, org.springframework.security.web.session.SessionManagementFilter@e0de69a, org.springframework.security.web.access.ExceptionTranslationFilter@2a3f87e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b314684]
+ 2021.04.24 13:03:37.999 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:03:38.001 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:03:38.006 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.91 seconds (JVM running for 41.968)
+ 2021.04.24 13:03:38.014 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:03:41.326 [http-nio-8080-exec-1] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:03:41.327 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:03:41.329 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+ 2021.04.24 13:04:29.014 [Thread-8] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:04:29.015 [Thread-8] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:04:29.015 [Thread-8] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:04:29.019 [Thread-8] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ 2021.04.24 13:04:29.035 [Thread-8] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+ 2021.04.24 13:04:29.285 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12946 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:04:29.290 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:04:29.530 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:04:29.534 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:04:29.649 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:04:29.650 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:04:29.651 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:04:29.651 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:04:29.660 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:04:29.661 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 363 ms
+ 2021.04.24 13:04:29.699 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:04:29.702 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+ 2021.04.24 13:04:29.717 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+ 2021.04.24 13:04:29.717 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:04:29.733 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:04:29.733 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:04:29.747 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:04:29.807 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:04:29.852 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: de3a9b29-ff8c-4883-ba4c-315ffb3c77cc
+
+ 2021.04.24 13:04:29.859 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4315b725, org.springframework.security.web.context.SecurityContextPersistenceFilter@48d667f6, org.springframework.security.web.header.HeaderWriterFilter@59c508db, org.springframework.security.web.csrf.CsrfFilter@29ef26de, org.springframework.security.web.authentication.logout.LogoutFilter@17d4c90b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1aa267e7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@566755ac, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3515db97, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6e0aee11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ed7f4a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@fa5a870, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c010f8d, org.springframework.security.web.session.SessionManagementFilter@185f7bf5, org.springframework.security.web.access.ExceptionTranslationFilter@535cbd70, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72e092d2]
+ 2021.04.24 13:04:29.879 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:04:29.880 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:04:29.883 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.763 seconds (JVM running for 93.846)
+ 2021.04.24 13:04:29.884 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:04:40.846 [Thread-13] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:04:40.847 [Thread-13] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:04:40.847 [Thread-13] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:04:40.855 [Thread-13] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ 2021.04.24 13:04:40.871 [Thread-13] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+ 2021.04.24 13:04:41.113 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12946 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:04:41.115 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:04:41.289 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:04:41.292 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:04:41.386 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:04:41.388 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:04:41.388 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:04:41.388 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:04:41.398 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:04:41.398 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 265 ms
+ 2021.04.24 13:04:41.434 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:04:41.438 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Starting...
+ 2021.04.24 13:04:41.449 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Start completed.
+ 2021.04.24 13:04:41.449 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:04:41.467 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:04:41.467 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:04:41.488 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:04:41.525 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:04:41.570 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 772edf4c-0657-4e38-a4f7-cc4ec555cca2
+
+ 2021.04.24 13:04:41.577 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4de77d58, org.springframework.security.web.context.SecurityContextPersistenceFilter@214c83ac, org.springframework.security.web.header.HeaderWriterFilter@1ae1c8bf, org.springframework.security.web.csrf.CsrfFilter@6902c56e, org.springframework.security.web.authentication.logout.LogoutFilter@67cfd2ed, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5bac9cad, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@835321d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@637b66e2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6194ebb8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@385ae9e0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cea7a64, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c8dc7d4, org.springframework.security.web.session.SessionManagementFilter@5e1a14b4, org.springframework.security.web.access.ExceptionTranslationFilter@23074104, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@36b31026]
+ 2021.04.24 13:04:41.591 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:04:41.593 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:04:41.597 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.64 seconds (JVM running for 105.56)
+ 2021.04.24 13:04:41.598 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:04:41.876 [http-nio-8080-exec-1] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:04:41.878 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:04:41.880 [http-nio-8080-exec-1] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 2 ms
+ 2021.04.24 13:05:49.749 [Thread-18] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:05:49.750 [Thread-18] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:05:49.750 [Thread-18] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:05:49.753 [Thread-18] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ 2021.04.24 13:05:49.770 [Thread-18] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed.
+ 2021.04.24 13:05:50.009 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12946 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:05:50.014 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:05:50.169 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:05:50.172 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:05:50.268 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:05:50.270 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:05:50.270 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:05:50.271 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:05:50.279 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:05:50.279 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 257 ms
+ 2021.04.24 13:05:50.310 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:05:50.313 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Starting...
+ 2021.04.24 13:05:50.324 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Start completed.
+ 2021.04.24 13:05:50.324 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:05:50.339 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:05:50.340 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:05:50.350 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:05:50.389 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:05:50.442 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 5f6c75be-cfb6-471c-aab9-127533970906
+
+ 2021.04.24 13:05:50.459 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a727230, org.springframework.security.web.context.SecurityContextPersistenceFilter@5520170, org.springframework.security.web.header.HeaderWriterFilter@29ea9bb6, org.springframework.security.web.csrf.CsrfFilter@1167398c, org.springframework.security.web.authentication.logout.LogoutFilter@4d30ab92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@505a8f9e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@624cbd31, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1dd11fd1, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e739a15, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77514d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a3f08aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19f3558a, org.springframework.security.web.session.SessionManagementFilter@2d51f60f, org.springframework.security.web.access.ExceptionTranslationFilter@760b8a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14367651]
+ 2021.04.24 13:05:50.474 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:05:50.476 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:05:50.480 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.623 seconds (JVM running for 174.444)
+ 2021.04.24 13:05:50.481 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:08:58.403 [SpringContextShutdownHook] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:08:58.404 [SpringContextShutdownHook] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:08:58.404 [SpringContextShutdownHook] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:08:58.407 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ 2021.04.24 13:08:58.423 [SpringContextShutdownHook] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed.
+ 2021.04.24 13:09:09.301 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:09:09.308 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:09:09.407 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:09:09.409 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:09:10.030 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:09:10.045 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:09:10.678 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:09:10.692 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:09:10.693 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:09:10.694 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:09:10.765 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:09:10.767 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1357 ms
+ 2021.04.24 13:09:10.943 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:09:10.980 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 13:09:11.042 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 13:09:11.093 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 13:09:11.142 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 13:09:11.163 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:09:11.296 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:09:11.302 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:09:11.334 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:09:11.475 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d6ae6c08-375b-410f-b3fc-6d8b10fb4682
+
+ 2021.04.24 13:09:11.517 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27dd4a98, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dd985c9, org.springframework.security.web.header.HeaderWriterFilter@1b690a4f, org.springframework.security.web.authentication.logout.LogoutFilter@1cd8bbee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29d55807, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16eab86a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6efdd98c, org.springframework.security.web.session.SessionManagementFilter@60dfd10, org.springframework.security.web.access.ExceptionTranslationFilter@138aedf8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@43ee0ded]
+ 2021.04.24 13:09:11.608 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:09:11.836 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:09:11.867 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:09:11.889 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 3.035 seconds (JVM running for 4.173)
+ 2021.04.24 13:11:05.388 [Thread-4] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:11:05.390 [Thread-4] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:11:05.390 [Thread-4] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:11:05.396 [Thread-4] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+ 2021.04.24 13:11:05.414 [Thread-4] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+ 2021.04.24 13:11:05.696 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:11:05.698 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:11:05.976 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:11:05.984 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:11:06.181 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:11:06.183 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:11:06.183 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:11:06.183 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:11:06.196 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:11:06.196 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 490 ms
+ 2021.04.24 13:11:06.254 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:11:06.257 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Starting...
+ 2021.04.24 13:11:06.271 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Start completed.
+ 2021.04.24 13:11:06.272 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:11:06.290 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:11:06.291 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:11:06.303 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:11:06.348 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:11:06.433 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b5889657-e3dc-4980-8b5a-def6e2f71649
+
+ 2021.04.24 13:11:06.460 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57d9bcf6, org.springframework.security.web.context.SecurityContextPersistenceFilter@77c62bcf, org.springframework.security.web.header.HeaderWriterFilter@381954fe, org.springframework.security.web.csrf.CsrfFilter@6784598d, org.springframework.security.web.authentication.logout.LogoutFilter@69e3a555, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48cc258, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3ebd439b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5dd0a7cd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@59732c55, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4089c869, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@32c5ca22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28503de7, org.springframework.security.web.session.SessionManagementFilter@324b543a, org.springframework.security.web.access.ExceptionTranslationFilter@5965ddb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@40c6955c]
+ 2021.04.24 13:11:06.485 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:11:06.491 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:11:06.496 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.985 seconds (JVM running for 118.781)
+ 2021.04.24 13:11:06.500 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+ 2021.04.24 13:11:07.949 [Thread-8] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:11:07.951 [Thread-8] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:11:07.951 [Thread-8] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:11:07.954 [Thread-8] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Shutdown initiated...
+ 2021.04.24 13:11:07.968 [Thread-8] [INFO] c.z.h.HikariDataSource - HikariPool-2 - Shutdown completed.
+ 2021.04.24 13:11:08.170 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:11:08.171 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:11:08.359 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:11:08.362 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:11:08.478 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:11:08.480 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:11:08.482 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:11:08.482 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:11:08.493 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:11:08.493 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 315 ms
+ 2021.04.24 13:11:08.534 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:11:08.537 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Starting...
+ 2021.04.24 13:11:08.551 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+ 2021.04.24 13:11:08.552 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:11:08.569 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:11:08.569 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:11:08.590 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:11:08.633 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4ebb2ea9-8679-4a9f-a179-56f0a3b6376a
+
+ 2021.04.24 13:11:08.637 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21509682, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b8a94e8, org.springframework.security.web.header.HeaderWriterFilter@4795c3b2, org.springframework.security.web.authentication.logout.LogoutFilter@1386751d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c8ee3f0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ef2580, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31884a04, org.springframework.security.web.session.SessionManagementFilter@2016a70, org.springframework.security.web.access.ExceptionTranslationFilter@744a6d24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2a56cf5d]
+ 2021.04.24 13:11:08.666 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:11:08.718 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:11:08.719 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:11:08.723 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.674 seconds (JVM running for 121.008)
+ 2021.04.24 13:11:08.735 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' securityConfiguration; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+ 2021.04.24 13:12:28.385 [Thread-13] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:12:28.391 [Thread-13] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:12:28.391 [Thread-13] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:12:28.398 [Thread-13] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+ 2021.04.24 13:12:28.412 [Thread-13] [INFO] c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+ 2021.04.24 13:12:28.640 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:12:28.642 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:12:28.801 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:12:28.805 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:12:28.905 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:12:28.907 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:12:28.908 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:12:28.909 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:12:28.923 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:12:28.923 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 269 ms
+ 2021.04.24 13:12:28.962 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:12:28.966 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Starting...
+ 2021.04.24 13:12:28.975 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Start completed.
+ 2021.04.24 13:12:28.976 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:12:28.993 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:12:28.993 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:12:29.005 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:12:29.035 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 151be255-e0ad-4b58-be16-fd0d4c273e4a
+
+ 2021.04.24 13:12:29.042 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50187b28, org.springframework.security.web.context.SecurityContextPersistenceFilter@400878d2, org.springframework.security.web.header.HeaderWriterFilter@28de780a, org.springframework.security.web.authentication.logout.LogoutFilter@45f4a046, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6213994e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3956b32e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43f783cc, org.springframework.security.web.session.SessionManagementFilter@7b009205, org.springframework.security.web.access.ExceptionTranslationFilter@5b7f38cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a054b20]
+ 2021.04.24 13:12:29.062 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:12:29.108 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:12:29.110 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:12:29.115 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.619 seconds (JVM running for 201.401)
+ 2021.04.24 13:12:29.116 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:13:21.494 [Thread-18] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:13:21.494 [Thread-18] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:13:21.495 [Thread-18] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:13:21.497 [Thread-18] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Shutdown initiated...
+ 2021.04.24 13:13:21.514 [Thread-18] [INFO] c.z.h.HikariDataSource - HikariPool-4 - Shutdown completed.
+ 2021.04.24 13:13:21.748 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:13:21.750 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:13:21.935 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:13:21.942 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:13:22.055 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:13:22.057 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:13:22.057 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:13:22.057 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:13:22.067 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:13:22.068 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 312 ms
+ 2021.04.24 13:13:22.101 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:13:22.105 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Starting...
+ 2021.04.24 13:13:22.118 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Start completed.
+ 2021.04.24 13:13:22.118 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:13:22.132 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:13:22.132 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:13:22.143 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:13:22.168 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: bf131fe9-09e6-4e6a-b27d-3a2bdc866374
+
+ 2021.04.24 13:13:22.173 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bd95e0, org.springframework.security.web.context.SecurityContextPersistenceFilter@727b2931, org.springframework.security.web.header.HeaderWriterFilter@6277b49b, org.springframework.security.web.authentication.logout.LogoutFilter@6f0faaef, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2790b4bd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@781c1fb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6be5cd5b, org.springframework.security.web.session.SessionManagementFilter@584c8f51, org.springframework.security.web.access.ExceptionTranslationFilter@7bd5dd6e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25ac3059]
+ 2021.04.24 13:13:22.189 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:13:22.226 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:13:22.228 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:13:22.232 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.625 seconds (JVM running for 254.519)
+ 2021.04.24 13:13:22.234 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:13:30.732 [http-nio-8080-exec-3] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:13:30.733 [http-nio-8080-exec-3] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:13:30.734 [http-nio-8080-exec-3] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+ 2021.04.24 13:14:24.393 [Thread-23] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:14:24.394 [Thread-23] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:14:24.394 [Thread-23] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:14:24.396 [Thread-23] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Shutdown initiated...
+ 2021.04.24 13:14:24.410 [Thread-23] [INFO] c.z.h.HikariDataSource - HikariPool-5 - Shutdown completed.
+ 2021.04.24 13:14:24.658 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:14:24.661 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:14:24.839 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:14:24.843 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:14:24.950 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:14:24.951 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:14:24.952 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:14:24.952 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:14:24.959 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:14:24.959 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 290 ms
+ 2021.04.24 13:14:24.999 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:14:25.004 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-6 - Starting...
+ 2021.04.24 13:14:25.018 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-6 - Start completed.
+ 2021.04.24 13:14:25.019 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:14:25.037 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:14:25.037 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:14:25.050 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:14:25.077 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9217bfb8-aed4-47d0-b6bc-9567c35d1984
+
+ 2021.04.24 13:14:25.082 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b13e8c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@43fdca91, org.springframework.security.web.header.HeaderWriterFilter@15d0b728, org.springframework.security.web.authentication.logout.LogoutFilter@4c3d997, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a08d137, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a7158a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62562b6f, org.springframework.security.web.session.SessionManagementFilter@5ccbffd4, org.springframework.security.web.access.ExceptionTranslationFilter@48763f56, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6604fc39]
+ 2021.04.24 13:14:25.105 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:14:25.152 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:14:25.158 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:14:25.163 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.666 seconds (JVM running for 317.451)
+ 2021.04.24 13:14:25.164 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:14:30.602 [http-nio-8080-exec-2] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:14:30.602 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:14:30.603 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+ 2021.04.24 13:14:42.154 [Thread-28] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:14:42.155 [Thread-28] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:14:42.156 [Thread-28] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:14:42.158 [Thread-28] [INFO] c.z.h.HikariDataSource - HikariPool-6 - Shutdown initiated...
+ 2021.04.24 13:14:42.176 [Thread-28] [INFO] c.z.h.HikariDataSource - HikariPool-6 - Shutdown completed.
+ 2021.04.24 13:14:42.425 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:14:42.428 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev,core
+ 2021.04.24 13:14:42.636 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:14:42.639 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:14:42.753 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:14:42.755 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:14:42.756 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:14:42.756 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:14:42.763 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:14:42.763 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 329 ms
+ 2021.04.24 13:14:42.803 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 13:14:42.810 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-7 - Starting...
+ 2021.04.24 13:14:42.822 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-7 - Start completed.
+ 2021.04.24 13:14:42.822 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 13:14:42.837 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 13:14:42.837 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:14:42.861 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 13:14:42.891 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 529a39b8-a9cc-4cd3-96ef-01e24aced271
+
+ 2021.04.24 13:14:42.895 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a7bca9b, org.springframework.security.web.context.SecurityContextPersistenceFilter@71c3ac19, org.springframework.security.web.header.HeaderWriterFilter@2bdd396d, org.springframework.security.web.authentication.logout.LogoutFilter@990a33d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e3098, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@466a7723, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66da53d7, org.springframework.security.web.session.SessionManagementFilter@729a2194, org.springframework.security.web.access.ExceptionTranslationFilter@3d991233, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79a1e58f]
+ 2021.04.24 13:14:42.913 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:14:42.954 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:14:42.960 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 13:14:42.963 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 0.696 seconds (JVM running for 335.252)
+ 2021.04.24 13:14:42.965 [restartedMain] [INFO] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+ 2021.04.24 13:15:01.282 [http-nio-8080-exec-2] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+ 2021.04.24 13:15:01.284 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+ 2021.04.24 13:15:01.285 [http-nio-8080-exec-2] [INFO] o.s.w.s.DispatcherServlet - Completed initialization in 1 ms
+ 2021.04.24 13:17:11.916 [Thread-33] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 13:17:11.916 [Thread-33] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 13:17:11.917 [Thread-33] [INFO] o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+ 2021.04.24 13:17:11.920 [Thread-33] [INFO] c.z.h.HikariDataSource - HikariPool-7 - Shutdown initiated...
+ 2021.04.24 13:17:11.937 [Thread-33] [INFO] c.z.h.HikariDataSource - HikariPool-7 - Shutdown completed.
+ 2021.04.24 13:17:12.156 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12953 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:17:12.159 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:17:12.321 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:17:12.325 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:17:12.426 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:17:12.428 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:17:12.428 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:17:12.428 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:17:12.436 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:17:12.437 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 270 ms
+ 2021.04.24 13:17:12.482 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:17:12.499 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:18:22.451 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12961 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:18:22.460 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:18:22.508 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:18:22.509 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:18:23.285 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:18:23.307 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:18:23.920 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:18:23.928 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:18:23.929 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:18:23.929 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:18:23.981 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:18:23.981 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1471 ms
+ 2021.04.24 13:18:24.107 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:18:24.128 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:19:22.072 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12962 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:19:22.079 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:19:22.121 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:19:22.122 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:19:22.735 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:19:22.750 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:19:23.309 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:19:23.319 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:19:23.320 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:19:23.321 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:19:23.372 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:19:23.372 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1249 ms
+ 2021.04.24 13:19:23.496 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:19:23.546 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:19:35.430 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12963 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:19:35.438 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:19:35.489 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:19:35.490 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:19:36.172 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:19:36.187 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:19:36.788 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:19:36.798 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:19:36.798 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:19:36.799 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:19:36.871 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:19:36.872 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1381 ms
+ 2021.04.24 13:19:37.011 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:19:37.041 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:20:09.119 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12965 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:20:09.127 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:20:09.185 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:20:09.186 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:20:09.892 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:20:09.908 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:20:10.559 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:20:10.568 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:20:10.569 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:20:10.569 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:20:10.637 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:20:10.638 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1451 ms
+ 2021.04.24 13:20:10.786 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:20:10.808 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:20:49.745 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 12966 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:20:49.751 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:20:49.803 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:20:49.804 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:20:50.510 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:20:50.527 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:20:51.135 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:20:51.144 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:20:51.145 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:20:51.146 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:20:51.201 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:20:51.201 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1395 ms
+ 2021.04.24 13:20:51.316 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:20:51.347 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:24:49.575 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13274 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:24:49.586 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:24:49.646 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:24:49.648 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:24:50.376 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:24:50.393 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:24:51.012 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:24:51.021 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:24:51.022 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:24:51.023 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:24:51.078 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:24:51.078 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1430 ms
+ 2021.04.24 13:24:51.196 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:24:51.226 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:27:03.606 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13276 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:27:03.612 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:27:03.661 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:27:03.662 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:27:04.352 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:27:04.368 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:27:04.970 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:27:04.978 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:27:04.979 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:27:04.979 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:27:05.033 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:27:05.033 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1370 ms
+ 2021.04.24 13:27:05.147 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:27:05.178 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:27:42.683 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13277 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:27:42.719 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:27:42.775 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:27:42.776 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:27:43.431 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:27:43.468 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:27:44.089 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:27:44.097 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:27:44.097 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:27:44.098 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:27:44.153 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:27:44.153 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1377 ms
+ 2021.04.24 13:27:44.263 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:27:44.308 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:28:41.849 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13283 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:28:41.856 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:28:41.921 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:28:41.922 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:28:42.594 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:28:42.610 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:28:43.212 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:28:43.221 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:28:43.221 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:28:43.222 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:28:43.276 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:28:43.277 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1354 ms
+ 2021.04.24 13:28:43.393 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:28:43.427 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:29:30.263 [Test worker] [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.webservice.boarddemo.BoardDemoApplicationTests], using SpringBootContextLoader
+ 2021.04.24 13:29:30.279 [Test worker] [INFO] o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.webservice.boarddemo.BoardDemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+ 2021.04.24 13:29:30.282 [Test worker] [INFO] o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.webservice.boarddemo.BoardDemoApplicationTests]: BoardDemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+ 2021.04.24 13:29:30.425 [Test worker] [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.webservice.boarddemo.BoardDemoApplication for test class com.webservice.boarddemo.BoardDemoApplicationTests
+ 2021.04.24 13:29:30.516 [Test worker] [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+ 2021.04.24 13:29:30.529 [Test worker] [INFO] o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7862d996, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@19b6feb3, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@b255739, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@25e26d0e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4b22be4d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@65cf82fc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@44728de3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@724e127e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@2c400aac, org.springframework.test.context.event.EventPublishingTestExecutionListener@3581b5ba, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@654c3b7c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@67131849, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b2a6b6d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@733e2bd7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@772d6917, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@803f6eb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@106a8585]
+ 2021.04.24 13:29:30.940 [Test worker] [INFO] c.w.b.BoardDemoApplicationTests - Starting BoardDemoApplicationTests using Java 11.0.10 on soo.local with PID 13284 (started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:29:30.948 [Test worker] [INFO] c.w.b.BoardDemoApplicationTests - No active profile set, falling back to default profiles: default
+ 2021.04.24 13:29:32.182 [Test worker] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:29:32.212 [Test worker] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:29:33.078 [Test worker] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:29:48.420 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13285 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:29:48.428 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:29:48.479 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:29:48.479 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:29:49.186 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:29:49.201 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:29:49.844 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:29:49.853 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:29:49.853 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:29:49.854 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:29:49.929 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:29:49.929 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1449 ms
+ 2021.04.24 13:29:50.056 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:29:50.079 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:34:33.517 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13288 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:34:33.523 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:34:33.573 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:34:33.574 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:34:34.277 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:34:34.295 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:34:34.889 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:34:34.898 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:34:34.899 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:34:34.899 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:34:34.952 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:34:34.953 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1378 ms
+ 2021.04.24 13:34:35.068 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:34:35.091 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:34:46.925 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13289 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:34:46.933 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:34:46.982 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:34:46.983 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:34:47.686 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:34:47.701 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:34:48.310 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:34:48.319 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:34:48.320 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:34:48.321 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:34:48.377 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:34:48.377 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1394 ms
+ 2021.04.24 13:34:48.494 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:34:48.517 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:37:36.668 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13296 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:37:36.674 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:37:36.724 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:37:36.725 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:37:37.436 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:37:37.452 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:37:38.099 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:37:38.107 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:37:38.108 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:37:38.109 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:37:38.169 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:37:38.169 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1444 ms
+ 2021.04.24 13:37:38.283 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:37:38.307 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:38:04.688 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13297 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:38:04.697 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:38:04.771 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:38:04.772 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:38:05.614 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:38:05.631 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:38:06.309 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:38:06.319 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:38:06.319 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:38:06.320 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:38:06.373 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:38:06.373 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1600 ms
+ 2021.04.24 13:38:06.621 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:38:06.652 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 13:38:13.084 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13298 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 13:38:13.090 [restartedMain] [INFO] c.w.b.BoardDemoApplication - The following profiles are active: dev
+ 2021.04.24 13:38:13.140 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 13:38:13.141 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 13:38:13.819 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 13:38:13.833 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 13:38:14.429 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 13:38:14.438 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 13:38:14.439 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 13:38:14.439 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 13:38:14.494 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 13:38:14.494 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1352 ms
+ 2021.04.24 13:38:14.609 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 13:38:14.638 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 14:04:20.014 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13331 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 14:04:20.021 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 14:04:20.067 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 14:04:20.068 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 14:04:20.790 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 14:04:20.805 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 14:04:21.421 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 14:04:21.430 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 14:04:21.431 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 14:04:21.432 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 14:04:21.494 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 14:04:21.494 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1425 ms
+ 2021.04.24 14:04:21.611 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 14:04:21.634 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:13:28.228 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13872 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:13:28.244 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:13:28.295 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:13:28.295 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:13:29.019 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:13:29.034 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:13:29.684 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:13:29.692 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:13:29.693 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:13:29.694 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:13:29.753 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:13:29.753 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1457 ms
+ 2021.04.24 23:13:29.873 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:13:29.896 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:15:01.538 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13875 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:15:01.547 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:15:01.591 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:15:01.591 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:15:02.261 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:15:02.276 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:15:02.855 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:15:02.865 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:15:02.866 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:15:02.866 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:15:02.920 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:15:02.921 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1329 ms
+ 2021.04.24 23:15:03.054 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:15:03.094 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:15:12.537 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13876 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:15:12.544 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:15:12.589 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:15:12.590 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:15:13.230 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:15:13.244 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:15:13.870 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:15:13.880 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:15:13.881 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:15:13.881 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:15:13.932 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:15:13.933 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1342 ms
+ 2021.04.24 23:15:14.053 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:15:14.085 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:15:26.773 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13877 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:15:26.781 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:15:26.824 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:15:26.824 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:15:27.536 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:15:27.550 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:15:28.167 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:15:28.176 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:15:28.177 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:15:28.178 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:15:28.231 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:15:28.231 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1406 ms
+ 2021.04.24 23:15:28.304 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:15:28.341 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:17:59.898 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13878 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:17:59.908 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:17:59.956 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:17:59.957 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:18:00.651 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:18:00.665 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:18:01.316 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:18:01.325 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:18:01.326 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:18:01.327 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:18:01.385 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:18:01.385 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1427 ms
+ 2021.04.24 23:18:01.441 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:18:01.489 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:18:07.924 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13880 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:18:07.931 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:18:07.981 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:18:07.984 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:18:08.688 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:18:08.706 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:18:09.327 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:18:09.336 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:18:09.337 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:18:09.337 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:18:09.392 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:18:09.392 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1408 ms
+ 2021.04.24 23:18:09.510 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:18:09.532 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:18:46.867 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13881 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:18:46.875 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:18:46.926 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:18:46.926 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:18:47.583 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:18:47.596 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:18:48.192 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:18:48.204 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:18:48.205 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:18:48.206 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:18:48.263 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:18:48.263 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1336 ms
+ 2021.04.24 23:18:48.383 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:18:48.408 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:19:01.906 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13882 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:19:01.915 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:19:01.963 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:19:01.964 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:19:02.675 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:19:02.690 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:19:03.305 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:19:03.314 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:19:03.314 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:19:03.315 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:19:03.367 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:19:03.368 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1403 ms
+ 2021.04.24 23:19:03.482 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:19:03.514 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:19:22.115 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13883 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:19:22.122 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:19:22.173 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:19:22.175 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:19:22.868 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:19:22.882 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:19:23.479 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:19:23.488 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:19:23.489 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:19:23.489 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:19:23.543 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:19:23.544 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1367 ms
+ 2021.04.24 23:19:23.655 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:19:23.687 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:19:47.078 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13884 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:19:47.087 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:19:47.129 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:19:47.130 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:19:47.758 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:19:47.772 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:19:48.363 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:19:48.374 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:19:48.375 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:19:48.375 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:19:48.429 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:19:48.429 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
+ 2021.04.24 23:19:48.559 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:19:48.609 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:21:56.355 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13885 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:21:56.364 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:21:56.409 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:21:56.410 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:21:57.063 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:21:57.077 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:21:57.710 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:21:57.719 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:21:57.719 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:21:57.720 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:21:57.773 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:21:57.773 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1362 ms
+ 2021.04.24 23:21:57.878 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:21:57.900 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:23:58.455 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13886 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:23:58.462 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:23:58.537 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:23:58.538 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:23:59.223 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:23:59.236 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:23:59.735 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:23:59.797 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:23:59.799 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:23:59.800 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:23:59.866 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:23:59.866 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1326 ms
+ 2021.04.24 23:24:00.026 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:24:00.049 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:24:54.630 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13887 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:24:54.637 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:24:54.697 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:24:54.697 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:24:55.449 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:24:55.462 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:24:55.977 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:24:55.984 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:24:55.985 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:24:55.986 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:24:56.108 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:24:56.108 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+ 2021.04.24 23:24:56.185 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:24:56.204 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:25:54.523 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13888 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:25:54.530 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:25:54.584 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:25:54.585 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:25:55.248 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:25:55.260 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:25:55.750 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:25:55.812 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:25:55.814 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:25:55.814 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:25:55.880 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:25:55.881 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1295 ms
+ 2021.04.24 23:25:55.953 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:25:55.977 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:26:11.776 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13889 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:26:11.784 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:26:11.835 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:26:11.837 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:26:12.574 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:26:12.589 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:26:13.218 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:26:13.226 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:26:13.227 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:26:13.228 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:26:13.283 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:26:13.283 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1445 ms
+ 2021.04.24 23:26:13.339 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:26:13.399 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:26:36.786 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13890 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:26:36.795 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:26:36.838 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:26:36.839 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:26:37.505 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:26:37.517 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:26:38.116 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:26:38.127 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:26:38.128 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:26:38.129 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:26:38.183 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:26:38.183 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1343 ms
+ 2021.04.24 23:26:38.230 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:26:38.252 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:27:29.607 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13891 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:27:29.616 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:27:29.659 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:27:29.660 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:27:30.288 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:27:30.300 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:27:30.997 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:27:31.008 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:27:31.009 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:27:31.010 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:27:31.074 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:27:31.074 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1412 ms
+ 2021.04.24 23:27:31.147 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:27:31.175 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:28:41.284 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13894 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:28:41.293 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:28:41.337 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:28:41.338 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:28:42.054 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:28:42.066 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:28:42.625 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:28:42.634 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:28:42.635 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:28:42.636 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:28:42.692 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:28:42.692 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1353 ms
+ 2021.04.24 23:28:42.746 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:28:42.774 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:30:59.378 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 13898 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:30:59.387 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:30:59.434 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:30:59.434 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:31:00.123 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:31:00.137 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:31:00.687 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:31:00.696 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:31:00.697 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:31:00.697 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:31:00.750 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:31:00.750 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1315 ms
+ 2021.04.24 23:31:00.800 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:31:00.821 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:42:41.338 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14097 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:42:41.346 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:42:41.407 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:42:41.408 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:42:42.105 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:42:42.119 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:42:42.829 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:42:42.840 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:42:42.841 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:42:42.841 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:42:42.898 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:42:42.898 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1489 ms
+ 2021.04.24 23:42:42.948 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:42:42.998 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:42:58.124 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14098 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:42:58.133 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:42:58.176 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:42:58.176 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:42:58.781 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:42:58.794 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:42:59.366 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:42:59.378 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:42:59.379 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:42:59.379 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:42:59.435 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:42:59.435 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1258 ms
+ 2021.04.24 23:42:59.563 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:42:59.614 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:43:29.479 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14099 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:43:29.488 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:43:29.529 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:43:29.530 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:43:30.162 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:43:30.177 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:43:30.791 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:43:30.800 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:43:30.801 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:43:30.801 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:43:30.852 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:43:30.852 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1321 ms
+ 2021.04.24 23:43:30.959 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:43:30.980 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:43:45.778 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14100 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:43:45.787 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:43:45.829 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:43:45.829 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:43:46.535 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:43:46.549 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:43:47.148 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:43:47.157 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:43:47.157 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:43:47.158 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:43:47.209 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:43:47.209 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1379 ms
+ 2021.04.24 23:43:47.328 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:43:47.382 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:44:31.432 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14101 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:44:31.439 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:44:31.480 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:44:31.481 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:44:32.146 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:44:32.158 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:44:32.728 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:44:32.736 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:44:32.737 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:44:32.737 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:44:32.792 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:44:32.792 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1310 ms
+ 2021.04.24 23:44:32.921 [restartedMain] [INFO] o.a.c.c.StandardService - Stopping service [Tomcat]
+ 2021.04.24 23:44:32.946 [restartedMain] [INFO] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ 2021.04.24 23:45:05.112 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Starting BoardDemoApplication using Java 11.0.10 on soo.local with PID 14103 (/Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo/build/classes/java/main started by soo in /Users/soo/Downloads/5workspace/1private/1java/springboot-board-thymeleaf/board-demo)
+ 2021.04.24 23:45:05.120 [restartedMain] [INFO] c.w.b.BoardDemoApplication - No active profile set, falling back to default profiles: default
+ 2021.04.24 23:45:05.167 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+ 2021.04.24 23:45:05.168 [restartedMain] [INFO] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+ 2021.04.24 23:45:05.774 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+ 2021.04.24 23:45:05.786 [restartedMain] [INFO] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+ 2021.04.24 23:45:06.336 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+ 2021.04.24 23:45:06.344 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:45:06.345 [restartedMain] [INFO] o.a.c.c.StandardService - Starting service [Tomcat]
+ 2021.04.24 23:45:06.345 [restartedMain] [INFO] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.45]
+ 2021.04.24 23:45:06.394 [restartedMain] [INFO] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+ 2021.04.24 23:45:06.394 [restartedMain] [INFO] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
+ 2021.04.24 23:45:06.545 [restartedMain] [INFO] o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+ 2021.04.24 23:45:06.574 [restartedMain] [INFO] o.h.Version - HHH000412: Hibernate ORM core version 5.4.30.Final
+ 2021.04.24 23:45:06.687 [restartedMain] [INFO] o.h.a.c.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+ 2021.04.24 23:45:06.751 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+ 2021.04.24 23:45:06.817 [restartedMain] [INFO] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+ 2021.04.24 23:45:06.828 [restartedMain] [INFO] o.h.d.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+ 2021.04.24 23:45:06.945 [restartedMain] [INFO] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+ 2021.04.24 23:45:06.950 [restartedMain] [INFO] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+ 2021.04.24 23:45:07.008 [restartedMain] [INFO] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+ 2021.04.24 23:45:07.160 [restartedMain] [INFO] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+ 2021.04.24 23:45:07.376 [restartedMain] [INFO] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 3e93810b-79bc-4161-8245-68bfe7a2a0bc
+
+ 2021.04.24 23:45:07.436 [restartedMain] [INFO] o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fc3e659, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c5ebba3, org.springframework.security.web.header.HeaderWriterFilter@368652b8, org.springframework.security.web.csrf.CsrfFilter@2d592bc1, org.springframework.security.web.authentication.logout.LogoutFilter@58c6c485, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@690b8061, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@505e9d1e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@48f2cc39, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@432308e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28725c06, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60802683, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@134d91f0, org.springframework.security.web.session.SessionManagementFilter@6626148b, org.springframework.security.web.access.ExceptionTranslationFilter@55fa75f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d8c13c7]
+ 2021.04.24 23:45:07.500 [restartedMain] [INFO] o.a.c.h.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+ 2021.04.24 23:45:07.517 [restartedMain] [INFO] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+ 2021.04.24 23:45:07.534 [restartedMain] [INFO] c.w.b.BoardDemoApplication - Started BoardDemoApplication in 2.859 seconds (JVM running for 3.839)
+ 

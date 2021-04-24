@@ -1,0 +1,90 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.5'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'org.asciidoctor.convert' version '1.5.8'
+    id 'java'
+}
+
+group = 'com.webservice'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+configurations {
+    // log4j 사용하기 위해서 spring log 제외
+    compile.exclude module: 'spring-boot-starter-logging'
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+//bootRun {
+//    String activeProfile = System.properties['spring.profiles.active']
+//    println "zone: $activeProfile"
+//    systemProperty "spring.profiles.active", activeProfile
+//}
+
+dependencies {
+//    [
+//            'org.springframework.boot:spring-boot-starter-data-jpa',
+//            'org.springframework.boot:spring-boot-starter-jdbc',
+//            'org.springframework.boot:spring-boot-starter-oauth2-client',
+//            'org.springframework.boot:spring-boot-starter-security',
+//            'org.springframework.boot:spring-boot-starter-thymeleaf',
+//            'org.springframework.boot:spring-boot-starter-web'
+//    ].each {dep ->
+//        compile(dep) {
+//            exclude module: 'spring-boot-starter-logging'
+//            exclude module: "logback-classic"
+//        }
+//    }
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+//    implementation 'org.javassist:javassist:3.15.0-GA'
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.2'
+
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+ext {
+    snippetsDir = file('build/generated-snippets')
+}
+
+// profile 은 local 이 default
+//ext.profile = (!project.hasProperty('profile') || !profile) ? 'loc' : profile
+//
+//sourceSets {
+//    main {
+//        resources {
+//            srcDirs "src/main/resources", "src/main/resources-env/{profile}"
+//        }
+//    }
+//}
+
+
+test {
+    outputs.dir snippetsDir
+    useJUnitPlatform()
+}
+
+asciidoctor {
+    inputs.dir snippetsDir
+    dependsOn test
+}
