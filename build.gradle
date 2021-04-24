@@ -70,16 +70,17 @@ ext {
     snippetsDir = file('build/generated-snippets')
 }
 
+
 // profile 은 local 이 default
-//ext.profile = (!project.hasProperty('profile') || !profile) ? 'loc' : profile
+ext.profile = (!project.hasProperty('profile') || !profile) ? 'loc' : profile
 //
-//sourceSets {
-//    main {
-//        resources {
-//            srcDirs "src/main/resources", "src/main/resources-env/{profile}"
-//        }
-//    }
-//}
+sourceSets {
+    main {
+        resources {
+            srcDirs "src/main/resources", "src/main/resources-$profile"
+        }
+    }
+}
 
 
 test {
