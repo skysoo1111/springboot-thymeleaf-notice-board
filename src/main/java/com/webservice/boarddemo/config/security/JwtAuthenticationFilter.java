@@ -1,25 +1,20 @@
-package com.webservice.boarddemo.config;
+package com.webservice.boarddemo.config.security;
 
+import com.webservice.boarddemo.util.JwtTokenProvider;
 import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.GenericFilterBean;
 
-/**
- * JWT 가 유요한 토큰인지 인증하기 위한 Filter
- **/
+@RequiredArgsConstructor
 public class JwtAuthenticationFilter extends GenericFilterBean {
-
-  private JwtTokenProvider jwtTokenProvider;
-
-  public JwtAuthenticationFilter(JwtTokenProvider jwtTokenProvider) {
-    this.jwtTokenProvider = jwtTokenProvider;
-  }
+  private final JwtTokenProvider jwtTokenProvider;
 
   @Override
   public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)

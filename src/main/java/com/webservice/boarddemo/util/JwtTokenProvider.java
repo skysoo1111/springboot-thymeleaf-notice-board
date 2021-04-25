@@ -1,4 +1,4 @@
-package com.webservice.boarddemo.config;
+package com.webservice.boarddemo.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
